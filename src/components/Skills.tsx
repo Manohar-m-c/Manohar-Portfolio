@@ -8,6 +8,7 @@ const Skills = () => {
         { name: "React.js", level: 95, color: "bg-gradient-to-r from-cyan-400 to-blue-500" },
         { name: "Next.js", level: 90, color: "bg-gradient-to-r from-blue-400 to-indigo-500" },
         { name: "JavaScript (ES6+)", level: 85, color: "bg-gradient-to-r from-indigo-400 to-purple-500" },
+         { name: "TypeScript", level: 85, color: "bg-gradient-to-r from-indigo-400 to-purple-500" },
         { name: "HTML5/CSS3", level: 95, color: "bg-gradient-to-r from-purple-400 to-pink-500" }
       ]
     },

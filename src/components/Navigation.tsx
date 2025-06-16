@@ -38,7 +38,7 @@ const Navigation = () => {
                 ? 'bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent' 
                 : 'text-white'
             }`}>
-              Manohar
+              Manohar-Portfolio
             </span>
             <span className={`transition-colors duration-300 ${
               isScrolled 

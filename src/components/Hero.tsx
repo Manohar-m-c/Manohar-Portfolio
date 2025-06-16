@@ -1,8 +1,14 @@
 
 import { Github, Linkedin, Mail, Download, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import image from "../../public/images/1742556398229.jpg"
+import Resume from "../../public/images/Manohar_FrontendDeveloper.pdf"
 
 const Hero = () => {
+  function handledownload(event: any): void {
+       window.location.href = Resume
+  }
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated gradient background */}
@@ -26,7 +32,7 @@ const Hero = () => {
           <div className="relative mb-8 inline-block">
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full blur-xl opacity-60 animate-pulse-slow"></div>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+              src={image}
               alt="Manohara M C Profile"
               className="relative w-40 h-40 rounded-full mx-auto shadow-2xl border-4 border-white/30 backdrop-blur-sm"
             />
@@ -60,15 +66,27 @@ const Hero = () => {
               <Mail className="mr-2 h-5 w-5 group-hover:animate-bounce" />
               Let's Connect
             </Button>
-            <Button variant="outline" size="lg" className="group bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-xl">
-              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Download Resume
-            </Button>
+            <a
+  href={Resume}
+  download
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    variant="outline"
+    size="lg"
+    className="group bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-xl"
+  >
+    <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+    Download Resume
+  </Button>
+</a>
+
           </div>
           
           {/* Social links with hover effects */}
           <div className="flex justify-center space-x-8 mb-12">
-            <a href="https://gitlab.com/manoharmc" target="_blank" rel="noopener noreferrer" className="group text-white/70 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125 hover:rotate-12">
+            <a href="https://github.com/Manohar-m-c" target="_blank" rel="noopener noreferrer" className="group text-white/70 hover:text-cyan-400 transition-all duration-300 transform hover:scale-125 hover:rotate-12">
               <Github className="h-8 w-8 group-hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.5)]" />
             </a>
             <a href="https://linkedin.com/in/manohar-m-c-476908213" target="_blank" rel="noopener noreferrer" className="group text-white/70 hover:text-purple-400 transition-all duration-300 transform hover:scale-125 hover:rotate-12">
